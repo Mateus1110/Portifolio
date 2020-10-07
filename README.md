@@ -8,5 +8,11 @@ favicon io
 fonts awesome cdn
 uigradientes
 
+# Ícones
+:package: Nova funcionalidade
+:up: Atualização
+:beatle: Correção de bugs
+:checkered_flag: Release
+
 # Tarefas
 O controle das tarefas seja realizado no GitHub

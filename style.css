@@ -4,7 +4,84 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
+
+:root{
+    --primary-font: "Baloo Da 2", serif;
+    --secondary-font: "Josefin Sans", serif; 
+    --action-font: "Mulish", serif;
+}
+.hamburguer{
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;  
+}
+
+.hamburguer span{
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    font-family: var(--action-font);
+    color: white;
+    opacity: 0;
+
+}
+
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-right: .5rem solid green;
+    border-left: .5rem solid transparent;
+    border-top: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+
+}
+
+.show-menu .hamburguer:hover span{
+    opacity: 1;
+}
+
+.show-menu .hamburguer{
+    right: 16rem;
+    transition: .6s;
+}
+
+.line{
+    width: 100%;
+    height: .1rem;
+    background-color: white;
+    box-shadow: .1rem .1rem 1px black;
+    transition: transform .5s;
+}
+
+.show-menu #line1{
+        transform: rotate(45deg) translate(.3rem, .45rem);
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #line3{
+    transform: rotate(-46deg) translate(.1rem, -.43rem);
+}
+
 
 header{
     width: 100%;
@@ -55,7 +132,7 @@ header{
 .banner h1{
     color: white;
     font-size: 4rem;
-    font-family: "Baloo Da 2", serif;
+    font-family: var(--primary-font);
     font-weight: 200;
     text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
     animation: move-banner 1s 0.7s forwards;
@@ -64,7 +141,7 @@ header{
 }
 
 .banner p{
-    font-family: "Josefin Sans", serif;
+    font-family: var(--secondary-font);
     color: white;
     font-weight: 200;
     font-size: 1.5rem;
@@ -75,7 +152,7 @@ header{
 }
 
 .banner button{
-    font-family: "Mulish" serif;
+    font-family: var(--action-font);
     color: white;
     background-color: green;
     padding: 1rem 2rem 1rem 2rem; 
@@ -90,5 +167,66 @@ header{
 }
 
 .banner button:hover{
-    opacity: .8;
+    color: black;
+}
+
+.sidebar{
+    background-color: white;
+    width: 20rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -20rem;  
+    transition: all .5s;
+}
+
+.show-menu .sidebar{
+    right:0;
+}
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: .7rem;    
+}
+
+.menu-link{
+    font-family: var(--action-font);
+    color: green;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.menu-link:hover{
+    color: brown;
+}
+
+.social-media{
+    width: 100%;
+    bottom: 2rem;
+    display: flex;
+    height: 3rem;
+    position: absolute;
+    justify-content: space-around;
+}
+
+.social-media i{
+    text-align: center;
+    color:green;
+    height: 3rem;
+    width: 3rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.social-media i:hover{
+    color: brown;
 }
