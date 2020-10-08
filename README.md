@@ -1,5 +1,5 @@
 # Portfolio
-Um portfolio criado em com HTML, CSS e Javascript
+Um port folio criado em com HTML, CSS e Javascript
 
 # Sites de fonte
 google fonts
