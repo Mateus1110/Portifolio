@@ -29,6 +29,7 @@
 
 .hamburguer span{
     position: absolute;
+    z-index: 99;
     left: 3rem;
     height: 2rem;
     width: 6rem;
@@ -182,6 +183,7 @@ header{
 }
 
 .show-menu .sidebar{
+    z-index: 99;
     right:0;
 }
 
@@ -243,6 +245,7 @@ header{
     font-size: 2.5rem;
     border-bottom: solid green;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .conhecimentos{
@@ -307,4 +310,100 @@ header{
     font-size: 1rem;
     margin-top: 1rem;
     text-align: justify;
+}
+
+.sessao-projetos{
+    background-color: whitesmoke;
+}
+
+.projetos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.card{
+    width: 20rem;
+    height: 30rem;
+    position: relative;
+}
+
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    background-color: black;
+}
+
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    opacity: .8;
+    transition: opacity .5s;
+}
+
+.card:hover .card-img-wrapper img{
+    opacity: .5;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 0.1rem 0.3rem gray;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.card-info h2{
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: whitesmoke;
+    
+}
+
+.card-info h3{
+    font-family: var(--action-font);
+    font-weight: bold;
+    color: rgb(177, 0, 20);
+    margin-bottom: 1rem;
+}
+
+.card-info p{
+    font-family: var(--secondary-font);
+    color: whitesmoke;
+    font-weight: 200;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.card-info button{
+    padding: .5rem 1rem .5rem 1rem;
+    justify-content: center;
+    font-family: var(--action-font);
+    font-size: .7rem;
+    letter-spacing: .1rem;
+    background-color: green;
+    border-radius: 10%;
+    border: 0;
+    color: whitesmoke;
+    text-shadow: 0, .1rem .1rem gray;
+    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, 0.4);
+    cursor:pointer;
+    margin-left: 4.6rem;
+}
+
+.card-info button:hover{
+    color: black;
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    visibility: visible;
+    opacity: 1;
 }
