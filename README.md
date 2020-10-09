@@ -1,5 +1,5 @@
 # Portfolio
-Um port folio criado em com HTML, CSS e Javascript
+Um portfolio criado em com HTML, CSS e Javascript
 
 # Sites de fonte
 google fonts
@@ -15,4 +15,4 @@ uigradientes
 -:checkered_flag: Release
 
 # Tarefas
-O controle das tarefas seja realizado no GitHub
+O controle das tarefas é feito pelo GitHub
