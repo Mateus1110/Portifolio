@@ -204,7 +204,7 @@
                         <input type="number" name="qtde" id="qtde" min="1" max="100" value="1"></input>
                     </div>
                     <div class="inclui-js">
-                        <label for="js">Inclui script JS</label>
+                        <label for="js">Preciso de um script JS</label>
                         <input type="checkbox" name="js" id="js">
                     </div>
                     <div class="group-layout">
@@ -214,11 +214,11 @@
                         <label for="layout-nao">Já tenho um layout</label>
                     </div>
                     <div class="prazo">
-                        <label for="prazo">Prazo</label>
+                        <label>Prazo</label>
                         <input type="range" name="prazo" id="prazo" min="1" max="10" step="1"></input>
                         <label for="prazo" id="label-prazo">1 semana</label>
                         <label>Total: R$</label>
-                        <label>0,00</label>
+                        <label id="total-value">0, 00</label>
                     </div>
                 </form>
                 <button type="submit">Enviar</button>
