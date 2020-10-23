@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
@@ -21,7 +22,11 @@
         </div>
         <header id="home">
             <div class="img-wrapper">
-                <img src="imagens/bg image.jpg" alt="">
+                <picture class="image" alt='imagem'>
+                    <source media="(min-width:520px)" srcset="imagens/bg-image.jpg" alt="imagem de fundo">
+                    <source media="(min-width:10px)" srcset="imagens/bg-image-small.jpg" alt="imagem de fundo">
+                    <img src="imagens/bg-image.jpg" alt="imagem de fundo">
+                </picture>
             </div>
             <div class="banner">
                 <h1>Exemplo de site</h1>
@@ -32,7 +37,7 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#home"class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
                     <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
                     <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
                     <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
@@ -169,7 +174,7 @@
             </div>
         </div>
     </section>
-    <section class="sessao-contato" id="contato">
+    <!-- <section class="sessao-contato" id="contato">
         <div class="contato-wrapper">
             <div class="contato-left"> <img src="imagens/contact.jpg" alt="Imagem contato" srcset=""></div>
             <div class="contato-right">
@@ -194,7 +199,7 @@
     </section>
     <section class="sessao-orcamento" id="orcamento">
         <div class="orcamento-wrapper">
-            <!--<img src="imagens/orcamento.jpg" alt="Imagem orçamento">-->
+            <img src="imagens/orcamento.jpg" alt="Imagem orçamento">
             <div class="orcamento-content">
                 <h1>Faça um orçamento</h1>
                 <form>
@@ -223,11 +228,10 @@
                 <button type="submit">Enviar</button>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer>
         <div class="footer-content">
-            <p>Copyright &copy; 2020, 123 - Todos os direitos reservados</p>
             <div class="social-list-footer">
                 <ul>
                     <li><a href="https://github.com/Mateus1110"><i class="fab fa-github"></i></a></li>

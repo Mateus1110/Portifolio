@@ -124,6 +124,7 @@ header{
     object-fit: cover;
     opacity: 0.5;
     animation: zoom-bg 25s;
+    animation-iteration-count:infinite;
 }
 
 @keyframes zoom-bg{
@@ -186,7 +187,7 @@ header{
     height: 100vh;
     position: fixed;
     top: 0;
-    right: -20rem;  
+    right: -300rem;  
     transition: all .5s;
 }
 
@@ -257,40 +258,43 @@ header{
 }
 
 .conhecimentos{
+    margin-left: 2rem;
+    margin-right: 2rem;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(6, 6rem);
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, minmax(150px, 1fr));
     row-gap: .5rem;
+    column-gap: 1rem;
 }
 
 .conhecimento:nth-child(1){
-    grid-column: 2 / 6;
-    grid-row: 1 / 2;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .conhecimento:nth-child(2){
-    grid-column: 2 / 6;
-    grid-row: 3 / 5;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .conhecimento:nth-child(3){
-    grid-column: 2 / 6;
-    grid-row: 5 / 6;
+    grid-column: 1;
+    grid-row: 3;
 }
 
 .conhecimento:nth-child(4){
-    grid-column: 16 / 12;
-    grid-row: 1 / 2;
+    grid-column: 3;
+    grid-row: 1;
 }
 
 .conhecimento:nth-child(5){
-    grid-column: 16 / 12;
-    grid-row: 3 / 4;
+    grid-column: 3;
+    grid-row: 2;
 }
 
 .conhecimento:nth-child(6){
-    grid-column: 16 / 12;
-    grid-row: 5 / 6;
+    grid-column: 3;
+    grid-row: 3
 }
 
 .conhecimento-header{
@@ -317,13 +321,13 @@ header{
 }
 
 .projetos{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 2rem;
 }
 
 .card{
-    width: 20rem;
+    width: 30%;
     height: 30rem;
     position: relative;
 }
@@ -587,6 +591,7 @@ header{
 }
 
 footer{
+    margin-top: 3rem;
     background-color: brown;
     width: 100%;
     height: 7rem;

@@ -1,8 +1,24 @@
+let show = true;
 document.querySelector('.hamburguer').addEventListener('click', function(){
-    document.querySelector('.container').classList.toggle('show-menu');
+    if (document.body.offsetWidth <= 520 && show){
+        document.body.style.overflow = 'hidden';
+    }
+    else{
+        document.body.style.overflow = 'initial';
+    }
+    document.querySelector('.container').classList.toggle('show-menu', show);
+    show = !show;
 });
 
-function atualizaPreco(){
+document.querySelectorAll('.menu-link').forEach((element)=>{
+    element.addEventListener('click', () => {
+        document.querySelector('.container').classList.toggle('show-menu');
+        document.body.style.overflow = 'initial';
+
+    })
+})
+ 
+/* function atualizaPreco(){
     let qtde = document.querySelector("#qtde").value;
     let incluijs = document.querySelector('#js').checked;
     let layout = document.querySelector('#layout-sim').checked;
@@ -18,8 +34,8 @@ function atualizaPreco(){
     totalValue *= 1 + taxaUrgencia;
     document.querySelector('#total-value').innerHTML = totalValue.toFixed(0) + ',00';
 }
-
-document.querySelector("#qtde").addEventListener('change', atualizaPreco);
+ */
+/* document.querySelector("#qtde").addEventListener('change', atualizaPreco);
 document.querySelector('#js').addEventListener('change', atualizaPreco);
 document.querySelector('#layout-sim').addEventListener('change', atualizaPreco);
 document.querySelector('#layout-nao').addEventListener('change', atualizaPreco);
@@ -27,4 +43,4 @@ document.querySelector('#prazo').addEventListener('input', function(){
     const prazo = document.querySelector('#prazo').value;
     document.querySelector('#label-prazo').innerHTML = prazo + ' semanas';
     atualizaPreco();
-});
+}); */
