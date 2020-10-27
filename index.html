@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Portfólio</title>
+    <title>Portfólio Mateus Tabaldi</title>
 </head>
 <body>
     
@@ -29,9 +29,9 @@
                 </picture>
             </div>
             <div class="banner">
-                <h1>Exemplo de site</h1>
+                <h1>Portifólio para 1º emprego</h1>
                 <p>Mateus Tabaldi</p>
-                <button>Saiba mais</button>
+                <button  onClick="document.getElementById('informacoes').scrollIntoView()">Contato</button>
             </div>
         </header>
         <aside class="sidebar">
@@ -40,13 +40,12 @@
                     <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
                     <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
                     <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#informacoes" class="menu-link">Contato</a></li>
                 </ul>
             </nav>
             <div class="social-media">
-                <a href="https://github.com/Mateus1110"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mateus-tabaldi-34995418a/"><i class="fab fa-linkedin"></i></a>
+                <a onclick=abre_github()><i class="fab fa-github"></i></a>
+                <a onclick=abre_linkedin()><i class="fab fa-linkedin"></i></a>
             </div>
         </aside>
     </div>
@@ -58,24 +57,20 @@
             <div class="conhecimento">
                 <div class="conhecimento-header">
                     <i class="fab fa-html5"></i>
-                    <h3>HTML</h3>
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>HTML e CSS</h3>
                 </div>
                 <div class="conhecimento-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sint animi quo explicabo.<br />
-                        Molestiae, perspiciatis doloremque nemo, necessitatibus veritatis officia soluta, atque officiis<br />
-                        dolorum reprehenderit velit ad aut autem. Perspiciatis.
-                    </p>
+                    <p>Conhecimento das tags essenciais e estruturas básicas das páginas HTML. Possuo uma boa noção de estilização de páginas e responsividade usando a linguagem CSS</p>
                 </div>
             </div>
             <div class="conhecimento">
                 <div class="conhecimento-header">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS</h3>
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
                 </div>
                 <div class="conhecimento-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sint animi quo explicabo.<br />
-                        Molestiae, perspiciatis doloremque nemo, necessitatibus veritatis officia soluta, atque officiis<br />
-                        dolorum reprehenderit velit ad aut autem. Perspiciatis.
+                    <p>Conhecimento básico de criação de aplicações Web com ReactJs com a extensão de sintaxe JSX, NodeJs e Express.
                     </p>
                 </div>
             </div>
@@ -85,9 +80,7 @@
                     <h3>Javascript</h3>
                 </div>
                 <div class="conhecimento-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sint animi quo explicabo.<br />
-                        Molestiae, perspiciatis doloremque nemo, necessitatibus veritatis officia soluta, atque officiis<br />
-                        dolorum reprehenderit velit ad aut autem. Perspiciatis.
+                    <p>Experiência no uso da linguagem Javascript e seus conceitos e estrutura básica, tanto no Front-end como no Back-end de aplicações web.
                     </p>
                 </div>
             </div>
@@ -97,9 +90,7 @@
                     <h3>Python</h3>
                 </div>
                 <div class="conhecimento-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sint animi quo explicabo.<br />
-                        Molestiae, perspiciatis doloremque nemo, necessitatibus veritatis officia soluta, atque officiis<br />
-                        dolorum reprehenderit velit ad aut autem. Perspiciatis.
+                    <p>Possuo certa experiência com o uso da linguagem e alguns outros recursos como o framework Dash e a biblioteca Pandas e Numpy do Python.
                     </p>
                 </div>
             </div>
@@ -109,21 +100,18 @@
                     <h3>Git e GitHub</h3>
                 </div>
                 <div class="conhecimento-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sint animi quo explicabo.<br />
-                       Molestiae, perspiciatis doloremque nemo, necessitatibus veritatis officia soluta, atque officiis<br />
-                       dolorum reprehenderit velit ad aut autem. Perspiciatis.
+                    <p>Estou familiarizado com o uso da tecnologia para trabalho em projetos colaborativos e versionamento de código.
                     </p>
                     </div>
             </div>
             <div class="conhecimento">
                 <div class="conhecimento-header">
                     <i class="fas fa-database"></i>
-                    <h3>SQL</h3>
+                    <h3>MySQL e Sequelize</h3>
                 </div>
                 <div class="conhecimento-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sint animi quo explicabo.<br />
-                        Molestiae, perspiciatis doloremque nemo, necessitatibus veritatis officia soluta, atque officiis<br />
-                        dolorum reprehenderit velit ad aut autem. Perspiciatis.
+                    <p>
+                        Possuo experiência básica na criação e manipulação de bancos de dados relacionais mysql juntamente com o ORM Sequelize. 
                     </p>
                 </div>
             </div>
@@ -136,27 +124,24 @@
         <div class="projetos">
             <div class="card">
                 <div class="card-img-wrapper">
-                    <img src="imagens/project 1.jpg" alt="Imagem do projeto 1" srcset="">
+                    <img src="imagens/FeS 2.png" alt="Imagem do projeto 1" srcset="">
                     <div class="card-info">
-                        <h2>Projeto 1</h2>
-                        <h3>HTML, CSS, Javascript</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas esse in vel incidunt,<br />
-                        at quia suscipit consectetur maiores, autem accusantium aliquam, quisquam doloremque.
+                        <h2>Filmes e Séries</h2>
+                        <h3>HTML, CSS, Javascript, NodeJs, ReactJs</h3>
+                        <p>Filmes e series online é um site responsivo de consulta de filmes e séries, onde o usuário pode pesquisar o conteúdo pelo nome, ou filtrar os resultados por Populares, Melhores avaliados, Lançamentos ou por categorias.
                         </p>
-                        <button>Saiba mais</button>
+                        <button onclick=abre_filmes_e_series()>Saiba mais</button>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="card-img-wrapper">
-                    <img src="imagens/project 2.jpg" alt="Imagem do projeto 2" srcset="">
+                    <img src="imagens/portfolio.png" alt="Imagem do projeto 2" srcset="">
                     <div class="card-info">
-                        <h2>Projeto 2</h2>
+                        <h2>Portifólio</h2>
                         <h3>HTML, CSS, Javascript</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas esse in vel incidunt,<br />
-                            at quia suscipit consectetur maiores, autem accusantium aliquam, quisquam doloremque.</p>
-                        <button>Saiba mais</button>
+                            <p>O projeto é este proprio portifólio, desenvolvido usando HTML, CSS e Javascript puro. O site tem responsividade para todos os tamanhos de tela e um menu para facilitar a navegação. Clique no botão abaixo para ver o projeto no GitHub</p>
+                        <button onclick=abre_github_portifolio()>Saiba mais</button>
                     </div>
                 </div>
             </div>
@@ -164,79 +149,39 @@
                 <div class="card-img-wrapper">
                     <img src="imagens/project 3.jpg" alt="Imagem do projeto 3" srcset="">
                     <div class="card-info">
-                        <h2>Projeto 3</h2>
-                        <h3>HTML, CSS, Javascript.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas esse in vel incidunt,<br />
-                            at quia suscipit consectetur maiores, autem accusantium aliquam, quisquam doloremque.</p>
+                        <h2>Cadastro de pessoas</h2>
+                        <h3>HTML, CSS, Javascript, Nodejs, React, Express e Sequelize</h3>
+                        <p>O sistema ainda está em desenvolvimento. Este sistema será um sistema de cadastro de pessoas em uma interface gráfica web que armazena os dados em um banco MySQL</p>
                         <button>Saiba mais</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <section class="sessao-contato" id="contato">
-        <div class="contato-wrapper">
-            <div class="contato-left"> <img src="imagens/contact.jpg" alt="Imagem contato" srcset=""></div>
-            <div class="contato-right">
-                <h1>Contato</h1>
-                <form>
-                    <div class="input-group">
-                        <input type="text" class="field" id="nome"></input>
-                        <label for="nome" class="field-label">Nome</label>
-                    </div>
-                    <div class="input-group">
-                        <input type="text" class="field" id="email"></input>
-                        <label for="email" class="field-label">Email</label>
-                    </div>
-                    <div class="input-group">
-                        <textarea class="field" id="mensagem"></textarea>
-                        <label for="mensagem" class="field-label">Mensagem</label>
-                    </div>
-                    <button type="submit" class="contato-submit">Enviar</button>
-                </form>
+
+    <section class="informacoes" id="informacoes">
+        <div class="sessao-header">
+            <h1>Informações</h1>
+        </div>
+        <div class="informacoes-content">
+            <div class="informacoes-foto">
+                <img src="https://media-exp1.licdn.com/dms/image/C5603AQEtoIpAhNkKYQ/profile-displayphoto-shrink_200_200/0?e=1609372800&v=beta&t=QW9l_3KO0Lh0GyAKPrTGqm4bjILlR_U2W4FaD5dFnew" alt="foto-perfil">
+            </div>
+            <div class="informacoes-text">
+                <p><b>Nome:</b> Mateus Tabaldi</p>
+                <p><b>Idade: </b><label id='label-idade'></label></p>
+                <p><b>Formação:</b> Bacharelado em Ciência da Computação pela UNICENTRO</p> 
+                <p><b>Email:</b> tabaldimateus@gmail.com</p>
+                <p><b>Whatsapp:</b> (42)99966-8474</p>
             </div>
         </div>
     </section>
-    <section class="sessao-orcamento" id="orcamento">
-        <div class="orcamento-wrapper">
-            <img src="imagens/orcamento.jpg" alt="Imagem orçamento">
-            <div class="orcamento-content">
-                <h1>Faça um orçamento</h1>
-                <form>
-                    <div class="qtde-paginas">
-                        <label for="qtde">Quantidade de páginas</label>
-                        <input type="number" name="qtde" id="qtde" min="1" max="100" value="1"></input>
-                    </div>
-                    <div class="inclui-js">
-                        <label for="js">Preciso de um script JS</label>
-                        <input type="checkbox" name="js" id="js">
-                    </div>
-                    <div class="group-layout">
-                        <input type="radio" name="layout" id="layout-sim">
-                        <label for="layout-sim">Preciso de um layout</label>
-                        <input type="radio" name="layout" id="layout-nao">
-                        <label for="layout-nao">Já tenho um layout</label>
-                    </div>
-                    <div class="prazo">
-                        <label>Prazo</label>
-                        <input type="range" name="prazo" id="prazo" min="1" max="10" step="1"></input>
-                        <label for="prazo" id="label-prazo">1 semana</label>
-                        <label>Total: R$</label>
-                        <label id="total-value">0, 00</label>
-                    </div>
-                </form>
-                <button type="submit">Enviar</button>
-            </div>
-        </div>
-    </section> -->
 
     <footer>
         <div class="footer-content">
             <div class="social-list-footer">
-                <ul>
-                    <li><a href="https://github.com/Mateus1110"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/mateus-tabaldi-34995418a/"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
+                <a onclick=abre_github()><i class="fab fa-github"></i></a>
+                <a onclick=abre_linkedin()><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </footer>

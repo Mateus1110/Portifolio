@@ -17,7 +17,31 @@ document.querySelectorAll('.menu-link').forEach((element)=>{
 
     })
 })
- 
+
+function abre_filmes_e_series() {
+    window.open('https://filmes-e-series.herokuapp.com', '_blank');
+}
+  
+function abre_github() {
+    window.open('https://github.com/Mateus1110', '_blank');
+}
+
+function abre_github_portifolio() {
+    window.open('https://github.com/Mateus1110/Portifolio', '_blank');
+}
+
+function abre_linkedin() {
+    window.open('https://www.linkedin.com/in/mateus-tabaldi-34995418a/', '_blank');
+}
+
+function define_idade() {
+    let ano_nasc = 1997;
+    const data = new Date;
+    return data.getFullYear() - ano_nasc + ' anos';
+}
+
+document.getElementById("label-idade").innerHTML = define_idade()
+
 /* function atualizaPreco(){
     let qtde = document.querySelector("#qtde").value;
     let incluijs = document.querySelector('#js').checked;

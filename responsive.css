@@ -55,6 +55,11 @@
         width: 80%;
         margin: 2rem;
     }
+
+    .informacoes-foto{
+        width: 40%;
+        height: 40%;
+    }
 }
 
 @media (max-width: 360px){
@@ -80,6 +85,11 @@
     .conhecimento:nth-child(6){
         grid-column: 1;
         grid-row: 6;
+    }
+
+    .informacoes-content{
+        flex-direction: column;
+        align-items: center;
     }
 
 }
