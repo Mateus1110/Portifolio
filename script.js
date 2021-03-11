@@ -34,11 +34,24 @@ function abre_linkedin() {
     window.open('https://www.linkedin.com/in/mateus-tabaldi-34995418a/', '_blank');
 }
 
+/*
 function define_idade() {
     let ano_nasc = 1997;
     const data = new Date;
     return data.getFullYear() - ano_nasc + ' anos';
 }
+*/
+
+function define_idade(){
+    var aniversario = new Date("10/11/1997");
+    var diferenca_meses = Date.now() - aniversario.getTime();
+    var idade_data = new Date(diferenca_meses);     
+    var ano = idade_data.getUTCFullYear();
+    var idade = Math.abs(ano - 1970);
+    
+    return idade + ' anos';
+}
+
 
 document.getElementById("label-idade").innerHTML = define_idade()
 

@@ -399,22 +399,27 @@ header{
 }
 
 .informacoes-content{
-    margin: auto auto;
+    left: 10%;
     display: flex;
     width: 80%;
+}
+
+.informacoes-foto{
+    width: 20%;
+    height: 100%;
+    display: flex;
     justify-content: center;
 }
 
 .informacoes-foto img{
     border-radius: 20px;
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 60%;
 }
 
 .informacoes-text{
     line-height: 1.5rem;
     font-family: var(--secondary-font);
-    margin-left: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
